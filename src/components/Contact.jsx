@@ -43,7 +43,7 @@ const Contact = () => {
                     <a href="https://github.com/fortexfreddie" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-white transition-colors duration-300">
                         <FaGithub size={20} />
                     </a>
-                    <a href="https://linkedin.com/in/fortexfreddie" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-white transition-colors duration-300">
+                    <a href="https://www.linkedin.com/in/fred-kamsy-91685b295?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-white transition-colors duration-300">
                         <FaLinkedin size={20} />
                     </a>
                     <a href="https://twitter.com/fortexfreddie" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-white transition-colors duration-300">
