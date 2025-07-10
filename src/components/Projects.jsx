@@ -4,7 +4,7 @@ import skydrone from "../assets/images/skydrone.png";
 import lodgeFinder from "../assets/images/lodgeFinder.png";
 import lifestyle from "../assets/images/lifstyle.png";
 import { Code, ExternalLink } from 'lucide-react';
-
+import { motion } from "framer-motion";
 
 const projects = [
     {
@@ -75,7 +75,12 @@ const Projects = () => {
                 <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8 mt-8">
                     {
                         projects.map((project, index) => (
-                            <div key={index} className="group bg-gray-200 dark:bg-gray-800 rounded-xl border border-gray-300 dark:border-gray-600 backdrop-blur-md hover:shadow-md active:shadow-md transition-all duration-300 overflow-hidden h-fit md:h-96 flex flex-col">
+                            <motion.div
+                                initial={{ opacity: 0, y: 100 }}
+                                whileInView={{ opacity: 1, y: 0 }} 
+                                transition={{ duration: 1 }}
+                                viewport={{ once: true }} 
+                                key={index} className="group bg-gray-200 dark:bg-gray-800 rounded-xl border border-gray-300 dark:border-gray-600 backdrop-blur-md hover:shadow-md active:shadow-md transition-colors duration-300 overflow-hidden h-fit md:h-96 flex flex-col">
                                 <div className="h-32 md:h-2/5 bg-gradient-to-br from-gray-900 to-gray-800 flex justify-center items-center">
                                     <div className="relative w-full h-full flex justify-center items-center">
                                         <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-0 group-hover:opacity-100 group-active:opacity-100 transition-opacity duration-300 flex items-end p-6">
@@ -93,7 +98,7 @@ const Projects = () => {
                                             <p className="text-lg font-semibold text-gray-600 dark:text-gray-50 transition-colors duration-300 mb-4">{project.title}</p>
                                             <span className="text-sm font-medium px-3 py-1 rounded-full bg-emerald-500/30 border border-emerald-500/20 dark:border-emerald-500/40 text-emerald-700 dark:text-emerald-300 transition-colors duration-300 mb-4">Live</span>
                                         </div>
-                                        <p className="text-sm text-gray-600 dark:text-gray-400 transition-colors duration-300 mb-4 line-clamp-2">{project.description}</p>
+                                        <p className="text-sm text-gray-600 dark:text-gray-400 transition-colors duration-300 mb-4 md:line-clamp-2">{project.description}</p>
                                         <div className="flex flex-row flex-wrap gap-2 mb-5">
                                             {project.tags.map((tag, tagIndex) => (
                                                 <span key={tagIndex} className="text-xs text-gray-600 dark:text-gray-50 font-medium bg-gray-50 dark:bg-gray-800 rounded border border-gray-200 dark:border-gray-600 py-1 px-2 transition-colors duration-300">{tag}</span>
@@ -111,12 +116,17 @@ const Projects = () => {
                                         </div>
                                     </div>
                                 </div>
-                            </div>
+                            </motion.div>
                         ))
                     }
                     {
                         inDevelopmentProject.map((project, index) => (
-                            <div key={index} className="group bg-gray-200 dark:bg-gray-800 rounded-xl border border-gray-300 dark:border-gray-600 backdrop-blur-md hover:shadow-md active:shadow-md transition-all duration-300 overflow-hidden h-fit md:h-96 flex flex-col">
+                            <motion.div
+                                initial={{ opacity: 0, y: 100 }}
+                                whileInView={{ opacity: 1, y: 0 }} 
+                                transition={{ duration: 1 }}
+                                viewport={{ once: true }} 
+                                key={index} className="group bg-gray-200 dark:bg-gray-800 rounded-xl border border-gray-300 dark:border-gray-600 backdrop-blur-md hover:shadow-md active:shadow-md transition-colors duration-300 overflow-hidden h-fit md:h-96 flex flex-col">
                                 <div className="h-32 md:h-2/5 bg-gradient-to-br from-gray-900 to-gray-800 flex justify-center items-center">
                                     <div className="relative w-full h-full flex justify-center items-center">
                                         <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-0 group-hover:opacity-100 group-active:opacity-100 transition-opacity duration-300 flex items-end p-6">
@@ -152,11 +162,16 @@ const Projects = () => {
                                         </div>
                                     </div>
                                 </div>
-                            </div>
+                            </motion.div>
                         ))
                     }
                 </div>
-                <div className="flex flex-col justify-center items-center mt-10">
+                <motion.div
+                    initial={{ opacity: 0, y: 100 }}
+                    whileInView={{ opacity: 1, y: 0 }} 
+                    transition={{ duration: 1 }}
+                    viewport={{ once: true }} 
+                    className="flex flex-col justify-center items-center mt-10">
                     <div className="text-center mb-5">
                         <p className="text-2xl text-gray-900 dark:text-gray-100 transition-colors duration-300 font-bold tracking-wider">Want to see more of my work?</p>
                     </div>
@@ -166,7 +181,7 @@ const Projects = () => {
                             View Github Portfolio
                         </a>
                     </div>
-                </div>
+                </motion.div>
             </div>
         </section>
     );

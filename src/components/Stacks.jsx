@@ -1,4 +1,5 @@
 import { SiMongodb, SiTailwindcss, SiDart, SiPhp, SiJavascript, SiGithub, SiGit, SiReact, SiFlutter, SiMysql, SiLaravel, SiNodedotjs, SiExpress } from 'react-icons/si';
+import { motion } from "framer-motion";
 
 const Stack = () => {
     const Frontend = [
@@ -96,12 +97,21 @@ const Stack = () => {
                 <div className="mt-4 h-0.5 w-32 mx-auto bg-gradient-to-r from-gray-100 via-gray-400 to-gray-100 dark:from-gray-900 dark:via-gray-400 dark:to-gray-900 transition-colors duration-300"></div>
                 <p className="mt-6 text-lg text-gray-600 dark:text-gray-300 text-center transition-colors duration-300">“Technologies I Use to Build Modern Applications”</p>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-8">
-                    <div className="bg-gray-200 dark:bg-gray-800 rounded-xl p-6 border border-gray-300 dark:border-gray-600 backdrop-blur-md transition-colors duration-300">
+                    <motion.div
+                        initial={{ opacity: 0, y: 100 }}
+                        whileInView={{ opacity: 1, y: 0 }} 
+                        transition={{ duration: 1 }}
+                        viewport={{ once: true }}
+                        className="bg-gray-200 dark:bg-gray-800 rounded-xl p-6 border border-gray-300 dark:border-gray-600 backdrop-blur-md transition-colors duration-300">
                         <p className="text-lg font-semibold text-gray-600 dark:text-gray-50 transition-colors duration-300 mb-4">Frontend Development</p>
                         <div className="grid grid-cols-2 gap-4">
                             {
                                 Frontend.map((item, index) => (
-                                    <div key={index} className="flex flex-col items-center p-4 bg-white dark:bg-gray-700 rounded-lg border border-gray-200 dark:border-gray-600 backdrop-blur-md hover:shadow-md hover:scale-105 active:scale-105 transition-all duration-500">
+                                    <motion.div
+                                        whileHover={{ scale: 1.03 }}
+                                        whileTap={{ scale: 0.9 }}
+                                        // transition={{duration: 0.1}}
+                                        key={index} className="flex flex-col items-center p-4 bg-white dark:bg-gray-700 rounded-lg border border-gray-200 dark:border-gray-600 backdrop-blur-md hover:shadow-md transition-all duration-500">
                                         <span className="mb-2">
                                             {item.icon}
                                         </span>
@@ -113,17 +123,25 @@ const Stack = () => {
                                             </span>
                                             <progress value={item.percentage} max="100" className="mt-1 w-full h-2 rounded [&::-webkit-progress-bar]:bg-gray-200 dark:[&::-webkit-progress-bar]:bg-gray-400 [&::-webkit-progress-bar]:rounded [&::-webkit-progress-value]:bg-emerald-600 [&::-webkit-progress-value]:rounded transition-all duration-300"></progress>
                                         </div>
-                                    </div>
+                                    </motion.div>
                                 ))
                             }
                         </div>
-                    </div>
-                    <div className="bg-gray-200 dark:bg-gray-800 rounded-xl p-6 border border-gray-300 dark:border-gray-600 backdrop-blur-md transition-colors duration-300">
+                    </motion.div>
+                    <motion.div
+                        initial={{ opacity: 0, y: 100 }}
+                        whileInView={{ opacity: 1, y: 0 }} 
+                        transition={{ duration: 1 }}
+                        viewport={{ once: true }}
+                        className="bg-gray-200 dark:bg-gray-800 rounded-xl p-6 border border-gray-300 dark:border-gray-600 backdrop-blur-md transition-colors duration-300">
                         <p className="text-lg font-semibold text-gray-600 dark:text-gray-50 transition-colors duration-300 mb-4">Backend Development</p>
                         <div className="grid grid-cols-2 gap-4">
                             {
                                 Backend.map((item, index) => (
-                                    <div key={index} className="flex flex-col items-center p-4 bg-white dark:bg-gray-700 rounded-lg border border-gray-200 dark:border-gray-600 backdrop-blur-md hover:shadow-md hover:scale-105 active:scale-105 transition-all duration-500">
+                                    <motion.div
+                                        whileHover={{ scale: 1.03 }}
+                                        whileTap={{ scale: 0.9 }}
+                                        key={index} className="flex flex-col items-center p-4 bg-white dark:bg-gray-700 rounded-lg border border-gray-200 dark:border-gray-600 backdrop-blur-md hover:shadow-md transition-all duration-500">
                                         <span className="mb-2">
                                             {item.icon}
                                         </span>
@@ -135,17 +153,25 @@ const Stack = () => {
                                             </span>
                                             <progress value={item.percentage} max="100" className="mt-1 w-full h-2 rounded [&::-webkit-progress-bar]:bg-gray-200 dark:[&::-webkit-progress-bar]:bg-gray-400 [&::-webkit-progress-bar]:rounded [&::-webkit-progress-value]:bg-emerald-600 [&::-webkit-progress-value]:rounded transition-all duration-300"></progress>
                                         </div>
-                                    </div>
+                                    </motion.div>
                                 ))
                             }
                         </div>
-                    </div>
-                    <div className="bg-gray-200 dark:bg-gray-800 rounded-xl p-6 border border-gray-300 dark:border-gray-600 backdrop-blur-md transition-colors duration-300">
+                    </motion.div>
+                    <motion.div
+                        initial={{ opacity: 0, y: 100 }}
+                        whileInView={{ opacity: 1, y: 0 }} 
+                        transition={{ duration: 1 }}
+                        viewport={{ once: true }}
+                        className="bg-gray-200 dark:bg-gray-800 rounded-xl p-6 border border-gray-300 dark:border-gray-600 backdrop-blur-md transition-colors duration-300">
                         <p className="text-lg font-semibold text-gray-600 dark:text-gray-50 transition-colors duration-300 mb-4">Database and Version Control</p>
                         <div className="grid grid-cols-2 gap-4">
                             {
                                 Database.map((item, index) => (
-                                    <div key={index} className="flex flex-col items-center p-4 bg-white dark:bg-gray-700 rounded-lg border border-gray-200 dark:border-gray-600 backdrop-blur-md hover:shadow-md hover:scale-105 active:scale-105 transition-all duration-500">
+                                    <motion.div
+                                        whileHover={{ scale: 1.03 }}
+                                        whileTap={{ scale: 0.9 }} 
+                                        key={index} className="flex flex-col items-center p-4 bg-white dark:bg-gray-700 rounded-lg border border-gray-200 dark:border-gray-600 backdrop-blur-md hover:shadow-md transition-all duration-500">
                                         <span className="mb-2">
                                             {item.icon}
                                         </span>
@@ -157,17 +183,25 @@ const Stack = () => {
                                             </span>
                                             <progress value={item.percentage} max="100" className="mt-1 w-full h-2 rounded [&::-webkit-progress-bar]:bg-gray-200 dark:[&::-webkit-progress-bar]:bg-gray-400 [&::-webkit-progress-bar]:rounded [&::-webkit-progress-value]:bg-emerald-600 [&::-webkit-progress-value]:rounded transition-all duration-300"></progress>
                                         </div>
-                                    </div>
+                                    </motion.div>
                                 ))
                             }
                         </div>
-                    </div>
-                    <div className="bg-gray-200 dark:bg-gray-800 rounded-xl p-6 border border-gray-300 dark:border-gray-600 backdrop-blur-md transition-colors duration-300">
+                    </motion.div>
+                    <motion.div
+                        initial={{ opacity: 0, y: 100 }}
+                        whileInView={{ opacity: 1, y: 0 }} 
+                        transition={{ duration: 1 }}
+                        viewport={{ once: true }} 
+                        className="bg-gray-200 dark:bg-gray-800 rounded-xl p-6 border border-gray-300 dark:border-gray-600 backdrop-blur-md transition-colors duration-300">
                         <p className="text-lg font-semibold text-gray-600 dark:text-gray-50 transition-colors duration-300 mb-4">Currently Learning</p>
                         <div className="grid grid-cols-2 gap-4">
                             {
                                 Learning.map((item, index) => (
-                                    <div key={index} className="flex flex-col items-center p-4 bg-white dark:bg-gray-700 rounded-lg border border-gray-200 dark:border-gray-600 backdrop-blur-md hover:shadow-md hover:scale-105 active:scale-105 transition-all duration-500">
+                                    <motion.div
+                                        whileHover={{ scale: 1.03 }}
+                                        whileTap={{ scale: 0.9 }}
+                                        key={index} className="flex flex-col items-center p-4 bg-white dark:bg-gray-700 rounded-lg border border-gray-200 dark:border-gray-600 backdrop-blur-md hover:shadow-md transition-all duration-500">
                                         <span className="mb-2">
                                             {item.icon}
                                         </span>
@@ -179,11 +213,11 @@ const Stack = () => {
                                             </span>
                                             <progress value={item.percentage} max="100" className="mt-1 w-full h-2 rounded [&::-webkit-progress-bar]:bg-gray-200 dark:[&::-webkit-progress-bar]:bg-gray-400 [&::-webkit-progress-bar]:rounded [&::-webkit-progress-value]:bg-emerald-600 [&::-webkit-progress-value]:rounded transition-all duration-300"></progress>
                                         </div>
-                                    </div>
+                                    </motion.div>
                                 ))
                             }
                         </div>
-                    </div>
+                    </motion.div>
                 </div>
             </div>
         </section>

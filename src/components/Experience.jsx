@@ -1,5 +1,6 @@
 import { Code, Globe, Smartphone } from 'lucide-react';
 import { SiPhp, SiReact, SiMysql, SiGithub } from 'react-icons/si';
+import { motion } from "framer-motion";
 
 const experiences = [
     {
@@ -74,7 +75,12 @@ const Experience = () => {
                 <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8 mt-8">
                     {
                         experiences.map((exp, index) => (
-                            <div key={index} className="bg-gray-100 dark:bg-gray-900 rounded-xl p-6 border border-gray-300 dark:border-gray-600 backdrop-blur-md transition-colors duration-300">
+                            <motion.div
+                                initial={{ opacity: 0, y: 100 }}
+                                whileInView={{ opacity: 1, y: 0 }} 
+                                transition={{ duration: 1 }}
+                                viewport={{ once: true }}
+                                key={index} className="bg-gray-100 dark:bg-gray-900 rounded-xl p-6 border border-gray-300 dark:border-gray-600 backdrop-blur-md transition-colors duration-300">
                                 <div className="flex flex-row gap-4 items-center mb-6">
                                     <div className={`bg-gradient-to-br ${exp.iconWrapper} p-3 rounded-lg`}>
                                         {exp.icon}
@@ -95,15 +101,20 @@ const Experience = () => {
                                         ))
                                     }
                                 </div>
-                            </div>
+                            </motion.div>
                         ))
                     }
                 </div>
                 <div className='flex flex-col gap-4 mt-10'>
-                    <h1 className="text-3xl text-center lg:text-start text-gray-900 dark:text-gray-100 transition-colors duration-300 font-bold tracking-wider">Expertise Breakdown</h1>
+                    <h1 className="text-3xl text-center lg:text-start text-gray-900 dark:text-gray-100 transition-colors duration-300 font-bold tracking-wider mb-4">Expertise Breakdown</h1>
                     {
                         Expertise.map((exp, index) => (
-                            <div key={index} className="bg-gray-100 dark:bg-gray-900 rounded-xl p-6 border border-gray-300 dark:border-gray-600 backdrop-blur-md transition-colors duration-300">
+                            <motion.div
+                                initial={{ opacity: 0, y: 100 }}
+                                whileInView={{ opacity: 1, y: 0 }} 
+                                transition={{ duration: 1 }}
+                                viewport={{ once: true }}
+                                key={index} className="bg-gray-100 dark:bg-gray-900 rounded-xl p-6 border border-gray-300 dark:border-gray-600 backdrop-blur-md transition-colors duration-300">
                                 <div className="flex md:flex-row flex-col gap-6">
                                     <div className="flex flex-col items-center">
                                         <div className="bg-gradient-to-br from-gray-800 to-gray-900 border border-emerald-800/50 p-3 rounded-lg">
@@ -125,7 +136,7 @@ const Experience = () => {
                                         </div>
                                     </div>
                                 </div>
-                            </div>
+                            </motion.div>
                         ))
                     }
                 </div>
