@@ -76,7 +76,7 @@ const Projects = () => {
                     {
                         projects.map((project, index) => (
                             <div key={index} className="group bg-gray-200 dark:bg-gray-800 rounded-xl border border-gray-300 dark:border-gray-600 backdrop-blur-md hover:shadow-md active:shadow-md transition-all duration-300 overflow-hidden h-fit md:h-96 flex flex-col">
-                                <div className="h-2/5 bg-gradient-to-br from-gray-900 to-gray-800 flex justify-center items-center">
+                                <div className="h-32 md:h-2/5 bg-gradient-to-br from-gray-900 to-gray-800 flex justify-center items-center">
                                     <div className="relative w-full h-full flex justify-center items-center">
                                         <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-0 group-hover:opacity-100 group-active:opacity-100 transition-opacity duration-300 flex items-end p-6">
                                             <a href={project.url} target="_blank" className="inline-flex items-center gap-2 px-4 py-2 text-gray-300 rounded-lg bg-white/10 backdrop-blur-sm border border-white/10 hover:bg-white/30 active:bg-white/30 hover:border-gray-500 transition-colors duration-300">
@@ -116,8 +116,8 @@ const Projects = () => {
                     }
                     {
                         inDevelopmentProject.map((project, index) => (
-                            <div key={index} className="group bg-gray-200 dark:bg-gray-800 rounded-xl border border-gray-300 dark:border-gray-600 backdrop-blur-md hover:shadow-md active:shadow-md transition-all duration-300 overflow-hidden h-96 flex flex-col">
-                                <div className="h-2/5 bg-gradient-to-br from-gray-900 to-gray-800 flex justify-center items-center">
+                            <div key={index} className="group bg-gray-200 dark:bg-gray-800 rounded-xl border border-gray-300 dark:border-gray-600 backdrop-blur-md hover:shadow-md active:shadow-md transition-all duration-300 overflow-hidden h-fit md:h-96 flex flex-col">
+                                <div className="h-32 md:h-2/5 bg-gradient-to-br from-gray-900 to-gray-800 flex justify-center items-center">
                                     <div className="relative w-full h-full flex justify-center items-center">
                                         <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-0 group-hover:opacity-100 group-active:opacity-100 transition-opacity duration-300 flex items-end p-6">
                                             <a onClick={(e) => e.preventDefault()} href={project.url} target="_blank" className="inline-flex items-center gap-2 px-4 py-2 text-gray-300 rounded-lg bg-white/10 backdrop-blur-sm border border-white/10 hover:bg-white/30 active:bg-white/30 hover:border-gray-500 transition-colors duration-300">
