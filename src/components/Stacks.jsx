@@ -110,8 +110,8 @@ const Stack = () => {
                                     <motion.div
                                         whileHover={{ scale: 1.03 }}
                                         whileTap={{ scale: 0.9 }}
-                                        // transition={{duration: 0.1}}
-                                        key={index} className="flex flex-col items-center p-4 bg-white dark:bg-gray-700 rounded-lg border border-gray-200 dark:border-gray-600 backdrop-blur-md hover:shadow-md transition-all duration-500">
+                                        transition={{duration: 0.2}}
+                                        key={index} className="flex flex-col items-center p-4 bg-white dark:bg-gray-700 rounded-lg border border-gray-200 dark:border-gray-600 backdrop-blur-md hover:shadow-md transition-colors duration-500">
                                         <span className="mb-2">
                                             {item.icon}
                                         </span>
@@ -141,7 +141,8 @@ const Stack = () => {
                                     <motion.div
                                         whileHover={{ scale: 1.03 }}
                                         whileTap={{ scale: 0.9 }}
-                                        key={index} className="flex flex-col items-center p-4 bg-white dark:bg-gray-700 rounded-lg border border-gray-200 dark:border-gray-600 backdrop-blur-md hover:shadow-md transition-all duration-500">
+                                        transition={{duration: 0.2}}
+                                        key={index} className="flex flex-col items-center p-4 bg-white dark:bg-gray-700 rounded-lg border border-gray-200 dark:border-gray-600 backdrop-blur-md hover:shadow-md transition-colors duration-500">
                                         <span className="mb-2">
                                             {item.icon}
                                         </span>
@@ -170,8 +171,9 @@ const Stack = () => {
                                 Database.map((item, index) => (
                                     <motion.div
                                         whileHover={{ scale: 1.03 }}
-                                        whileTap={{ scale: 0.9 }} 
-                                        key={index} className="flex flex-col items-center p-4 bg-white dark:bg-gray-700 rounded-lg border border-gray-200 dark:border-gray-600 backdrop-blur-md hover:shadow-md transition-all duration-500">
+                                        whileTap={{ scale: 0.9 }}
+                                        transition={{duration: 0.2}}
+                                        key={index} className="flex flex-col items-center p-4 bg-white dark:bg-gray-700 rounded-lg border border-gray-200 dark:border-gray-600 backdrop-blur-md hover:shadow-md transition-colors duration-500">
                                         <span className="mb-2">
                                             {item.icon}
                                         </span>
@@ -201,7 +203,8 @@ const Stack = () => {
                                     <motion.div
                                         whileHover={{ scale: 1.03 }}
                                         whileTap={{ scale: 0.9 }}
-                                        key={index} className="flex flex-col items-center p-4 bg-white dark:bg-gray-700 rounded-lg border border-gray-200 dark:border-gray-600 backdrop-blur-md hover:shadow-md transition-all duration-500">
+                                        transition={{duration: 0.2}}
+                                        key={index} className="flex flex-col items-center p-4 bg-white dark:bg-gray-700 rounded-lg border border-gray-200 dark:border-gray-600 backdrop-blur-md hover:shadow-md transition-colors duration-500">
                                         <span className="mb-2">
                                             {item.icon}
                                         </span>
