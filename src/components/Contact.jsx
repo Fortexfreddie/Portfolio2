@@ -12,7 +12,7 @@ const Contact = () => {
                     “Got a project or idea? Reach out using the form, I'm open to freelance work, collaborations, or a quick chat.”
                 </p>
 
-                <div className="mt-6">
+                <div className="mt-10">
                     <div className="relative flex items-center justify-center w-72 h-72 mx-auto">
                         <svg viewBox="0 0 300 300" className="absolute w-full h-full rotating-text">
                             <defs>

@@ -4,7 +4,6 @@ import skydrone from "../assets/images/skydrone.png";
 import lodgeFinder from "../assets/images/lodgeFinder.png";
 import lifestyle from "../assets/images/lifstyle.png";
 import { Code, ExternalLink } from 'lucide-react';
-import { SiGithub } from 'react-icons/si';
 
 
 const projects = [
@@ -13,6 +12,7 @@ const projects = [
         url: "http://lifestyleblogs.netlify.app/",
         description: "Lifestyle is your go-to blog for fresh trends, and inspiring stories in fashion, wellness, tech, and culture to stay informed every day.",
         image: lifestyle,
+        repo: "https://github.com/Fortexfreddie/LIFESTYLEBLOG",
         alt: "Lifestyle Blog",
         tags: ["Blog", "React", "Tailwind", "PHP", "MySQL"]
     },
@@ -21,6 +21,7 @@ const projects = [
         url: "https://lodgefinders.netlify.app",
         description: "A platform for finding and booking lodges, hotels, and guest houses.",
         image: lodgeFinder,
+        repo: "https://github.com/Fortexfreddie/Lodge_Finder_Project",
         alt: "Lodge Finder",
         tags: ["Lodge", "React", "Tailwind", "PHP", "MySQL"]
     },
@@ -29,6 +30,7 @@ const projects = [
         url: "https://skydrones.netlify.app",
         description: "Skydrone's innovative drone technology is bringing the latest farming innovations to farms around the world.",
         image: skydrone,
+        repo: "https://github.com/Fortexfreddie/SKYDRONE",
         alt: "skydrone",
         tags: ["Farms", "React", "CSS", "Tailwind"]
     },
@@ -37,16 +39,18 @@ const projects = [
         url: "https://examlyy.netlify.app",
         description: "The official certification Examination platform for Human-Computer interface.",
         image: Examly,
+        repo: "https://github.com/Fortexfreddie/online-exam-platform",
         alt: "Examly",
-        tags: ["Exams", "React", "Express.js", "Tailwind"]
+        tags: ["Exams", "React", "AOS", "Express.js", "Tailwind"]
     },
     {
         title: "Tech Maverick",
         url: "https://techmaverick.freesite.online",
         description: "A conference platform for hosting of conferences, events, seminars e.t.c",
         image: Conference,
+        repo: "https://github.com/Fortexfreddie/Tech-Maverick",
         alt: "Tech Maverick",
-        tags: ["Conference", "HTML", "Bootstrap"]
+        tags: ["Conference", "HTML", "CSS", "Bootstrap"]
     }
 ];
 
@@ -56,6 +60,7 @@ const inDevelopmentProject = [
         url: "#",
         description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequuntur, laudantium",
         imgText: "IP",
+        repo: "",
         alt: "In Progress",
         tags: ["In Progress", "HTML", "CSS", "JavaScript"],
     }
@@ -70,7 +75,7 @@ const Projects = () => {
                 <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8 mt-8">
                     {
                         projects.map((project, index) => (
-                            <div key={index} className="group bg-gray-200 dark:bg-gray-800 rounded-xl border border-gray-300 dark:border-gray-600 backdrop-blur-md hover:shadow-md active:shadow-md transition-all duration-300 overflow-hidden h-96 flex flex-col">
+                            <div key={index} className="group bg-gray-200 dark:bg-gray-800 rounded-xl border border-gray-300 dark:border-gray-600 backdrop-blur-md hover:shadow-md active:shadow-md transition-all duration-300 overflow-hidden h-fit md:h-96 flex flex-col">
                                 <div className="h-2/5 bg-gradient-to-br from-gray-900 to-gray-800 flex justify-center items-center">
                                     <div className="relative w-full h-full flex justify-center items-center">
                                         <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-0 group-hover:opacity-100 group-active:opacity-100 transition-opacity duration-300 flex items-end p-6">
@@ -82,7 +87,7 @@ const Projects = () => {
                                         <img loading="lazy" src={project.image} alt={project.alt} className="w-full h-full object-cover" />
                                     </div>
                                 </div>
-                                <div className="px-6 py-4">
+                                <div className="px-6 py-6 md:py-4">
                                     <div className="flex flex-col">
                                         <div className="flex flex-row justify-between items-center">
                                             <p className="text-lg font-semibold text-gray-600 dark:text-gray-50 transition-colors duration-300 mb-4">{project.title}</p>
@@ -95,14 +100,14 @@ const Projects = () => {
                                             ))}
                                         </div>
                                         <div className="flex flex-row gap-3">
-                                            <a href={project.url} target="_blank" className="flex items-center gap-2 px-4 py-2 text-gray-300 rounded-lg bg-gray-800 dark:bg-gray-700 hover:bg-gray-900 transition-colors duration-300">
+                                            <a href={project.url} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 px-4 py-2 text-gray-300 rounded-lg bg-gray-800 dark:bg-gray-700 hover:bg-gray-900 transition-colors duration-300">
                                                 <ExternalLink size={18} strokeWidth={2} />
                                                 <p className="text-sm font-medium">Demo</p>
                                             </a>
-                                            <button className="flex items-center gap-2 px-4 py-2 text-gray-300 rounded-lg bg-gray-800 dark:bg-gray-700 hover:bg-gray-900 transition-colors duration-300">
+                                            <a href={project.repo} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 px-4 py-2 text-gray-300 rounded-lg bg-gray-800 dark:bg-gray-700 hover:bg-gray-900 transition-colors duration-300">
                                                 <Code size={18} strokeWidth={2} />
                                                 <p className="text-sm font-medium">Details</p>
-                                            </button>
+                                            </a>
                                         </div>
                                     </div>
                                 </div>

@@ -100,7 +100,7 @@ const Experience = () => {
                     }
                 </div>
                 <div className='flex flex-col gap-4 mt-10'>
-                    <h1 className="text-3xl text-gray-900 dark:text-gray-100 transition-colors duration-300 font-bold tracking-wider">Expertise Breakdown</h1>
+                    <h1 className="text-3xl text-center lg:text-start text-gray-900 dark:text-gray-100 transition-colors duration-300 font-bold tracking-wider">Expertise Breakdown</h1>
                     {
                         Expertise.map((exp, index) => (
                             <div key={index} className="bg-gray-100 dark:bg-gray-900 rounded-xl p-6 border border-gray-300 dark:border-gray-600 backdrop-blur-md transition-colors duration-300">
