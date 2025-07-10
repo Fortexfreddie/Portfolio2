@@ -74,7 +74,7 @@ const Hero = () => {
                                 Kamsy
                             </span>
                         </h1>
-                        <p className="text-lg md:text-xl text-gray-600 dark:text-gray-300 transition-colors duration-300">Full-Stack Developer based in Enugu, Nigeria, with 3+ years of experience building fast, scalable web apps and APIs. I enjoy turning complex ideas into simple, user-friendly solutions and constantly explore new tech to stay ahead.</p>
+                        <p className="text-lg md:text-xl text-gray-600 dark:text-gray-300 transition-colors duration-300">Full-Stack Developer based in Enugu, Nigeria, with 2+ years of experience building fast, scalable web apps and APIs. I enjoy turning complex ideas into simple, user-friendly solutions and constantly explore new tech to stay ahead.</p>
                         <div className="flex flex-nowrap gap-4">
                             <a href="#Projects" className="inline-flex items-center gap-2 px-4 py-2 text-gray-50 rounded-lg bg-emerald-700 backdrop-blur-sm border border-white/10 hover:bg-emerald-800 active:bg-emerald-800 hover:border-gray-500 active:border-gray-500 transition-colors duration-300">
                                 <ExternalLink size={18} strokeWidth={2} />

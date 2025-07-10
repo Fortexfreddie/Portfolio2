@@ -5,7 +5,7 @@ const experiences = [
     {
         title: "Full-Stack Development",
         icon: <Code className="w-6 h-6 text-emerald-300" />,
-        years: 3,
+        years: 2,
         description:
         "I build end-to-end web applications using React, Tailwind CSS, PHP, Laravel, and MySQL—from clean UIs to secure APIs and scalable backend systems.",
         tools: ["PHP", "React", "Tailwind", "MySQL"],
@@ -14,7 +14,7 @@ const experiences = [
     {
         title: "Web Applications",
         icon: <Globe className="w-6 h-6 text-sky-300" />,
-        years: 3,
+        years: 2,
         description:
         "Specialized in building responsive and performant web platforms with modern UI libraries and frameworks tailored for the web.",
         tools: ["HTML", "CSS", "JavaScript", "Vite"],
@@ -34,21 +34,21 @@ const experiences = [
 const Expertise = [
     {
         title: "Frontend Development",
-        years: "3 years",
+        years: "2 years",
         description: "Crafting responsive and user-friendly interfaces using modern frameworks and libraries.",
         tools: ["React", "Tailwind CSS", "JavaScript", "Flutter"],
         icon: <SiReact className="text-blue-400" size={36} />
     },
     {
         title: "Backend Development",
-        years: "3 years",
+        years: "2 years",
         description: "Building secure and scalable server-side systems with PHP, Node.js, and Express.",
         tools: ["PHP", "Laravel", "Node.js", "Express"],
         icon: <SiPhp className="text-gray-300" size={36} />
     },
     {
         title: "Database Systems",
-        years: "3 years",
+        years: "2 years",
         description: "Designing and optimizing relational and NoSQL databases for performance and scalability.",
         tools: ["MySQL", "MongoDB"],
         icon: <SiMysql className="text-cyan-700" size={36} />
