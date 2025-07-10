@@ -30,7 +30,7 @@ const Employment = () => {
     return (  
         <section className="pt-20 pb-10 w-full transition-colors duration-300">
             <div className="lg:container mx-auto px-6 md:px-8 lg:px-12">
-                <h1 className="text-center text-3xl md:text-4xl text-gray-950 dark:text-gray-50 transition-colors duration-300 font-bold tracking-wider">Experience & Education</h1>
+                <h1 className="text-center text-3xl md:text-4xl text-gray-950 dark:text-gray-50 transition-colors duration-300 font-bold tracking-wider">Employment & Education</h1>
                 <div className="mt-4 h-0.5 w-32 mx-auto bg-gradient-to-r from-gray-100 via-gray-400 to-gray-100 dark:from-gray-900 dark:via-gray-400 dark:to-gray-900 transition-colors duration-300"></div>
                 <p className="mt-6 text-lg text-gray-600 dark:text-gray-300 text-center transition-colors duration-300">“Hands-on experience building real-world projects, backed by a strong academic foundation in computer science.”</p>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-8">
