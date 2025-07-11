@@ -1,5 +1,5 @@
 import img from "../assets/image.png";
-import freddie2 from "../assets/photo_2.jpg";
+import freddie2 from "../assets/photo.jpg";
 import { Moon, Sun, Menu, X } from 'lucide-react';
 import { useState, useEffect } from 'react';
 
