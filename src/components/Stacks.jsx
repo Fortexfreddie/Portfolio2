@@ -56,7 +56,7 @@ const Stack = () => {
                                 initial={{ opacity: 0, y: 100 }}
                                 whileInView={{ opacity: 1, y: 0 }} 
                                 transition={{ 
-                                    duration: 0.8,
+                                    duration: 1,
                                     delay: index * 0.2, // Stagger based on position
                                     ease: [0.25, 0.8, 0.25, 1],
                                 }}
