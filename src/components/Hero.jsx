@@ -39,7 +39,7 @@ const Hero = () => {
     }, []);
 
     return (  
-        <section className="relative pt-28 pb-10 md:pt-36 w-full h-screen 2xl:h-fit overflow-hidden">
+        <section className="relative pt-28 pb-10 md:pt-36 w-full h-fit lg:h-screen 2xl:h-fit overflow-hidden">
             <div className="absolute inset-0 opacity-30 h-full">
                 <div className="absolute top-10 left-20 w-24 h-24 rounded-full bg-emerald-400/20 animated-blob"></div>
                 <div className="absolute top-16 left-40 w-24 h-24 rounded-full bg-emerald-400/20 animated-blob"></div>
