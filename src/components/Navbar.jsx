@@ -1,4 +1,5 @@
 import img from "../assets/image.png";
+import freddie2 from "../assets/photo_2025.jpg";
 import { Moon, Sun, Menu, X } from 'lucide-react';
 import { useState, useEffect } from 'react';
 
@@ -28,7 +29,7 @@ const Navbar = () => {
             <div className="lg:container mx-auto flex items-center justify-between p-4 w-full">
                 <div className="flex items-center gap-2">
                     <span className="flex items-center justify-center rounded-full border-2 border-gray-200 dark:border-gray-400 hover:border-emerald-700 active:border-emerald-700 overflow-hidden transition-all duration-300 cursor-pointer">
-                        <img src={img} alt="" className="w-10 h-10 object-center object-cover"/>
+                        <img src={freddie2} alt="freddie" className="w-10 h-10 object-center object-cover"/>
                     </span>
                     <span className="text-xl font-bold text-gray-900 dark:text-white transition-all duration-300">FREDDIE</span>
                 </div>
