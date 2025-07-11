@@ -38,7 +38,11 @@ const Employment = () => {
                         <motion.div
                             initial={{ opacity: 0, y: 100 }}
                             whileInView={{ opacity: 1, y: 0 }} 
-                            transition={{ duration: 1 }}
+                            transition={{ 
+                                duration: 0.8,
+                                delay: i * 0.2, // Stagger based on position
+                                ease: [0.25, 0.8, 0.25, 1],
+                            }}
                             viewport={{ once: true }} 
                             key={i} className="bg-gray-100 dark:bg-gray-900 rounded-xl p-6 border border-gray-300 dark:border-gray-600 backdrop-blur-md transition-colors duration-300">
                             <h3 className="text-xl font-semibold text-gray-800 dark:text-gray-100">{exp.role}</h3>
@@ -58,7 +62,11 @@ const Employment = () => {
                 <motion.div
                     initial={{ opacity: 0, y: 100 }}
                     whileInView={{ opacity: 1, y: 0 }} 
-                    transition={{ duration: 1 }}
+                    transition={{ 
+                        duration: 0.8,
+                        delay: 0.2,
+                        ease: [0.25, 0.8, 0.25, 1],
+                    }}
                     viewport={{ once: true }} 
                     className="bg-gray-100 dark:bg-gray-900 rounded-xl p-6 border border-gray-300 dark:border-gray-600 mt-12 backdrop-blur-md transition-colors duration-300">
                     <h3 className="text-xl font-semibold text-gray-800 dark:text-gray-100">{education.degree}</h3>

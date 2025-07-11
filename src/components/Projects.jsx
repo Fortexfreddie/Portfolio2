@@ -78,7 +78,11 @@ const Projects = () => {
                             <motion.div
                                 initial={{ opacity: 0, y: 100 }}
                                 whileInView={{ opacity: 1, y: 0 }} 
-                                transition={{ duration: 1 }}
+                                transition={{ 
+                                    duration: 0.8,
+                                    delay: index * 0.2, // Stagger based on position
+                                    ease: [0.25, 0.8, 0.25, 1],
+                                }}
                                 viewport={{ once: true }} 
                                 key={index} className="group bg-gray-200 dark:bg-gray-800 rounded-xl border border-gray-300 dark:border-gray-600 backdrop-blur-md hover:shadow-md active:shadow-md transition-colors duration-300 overflow-hidden h-fit md:h-96 flex flex-col">
                                 <div className="h-32 md:h-2/5 bg-gradient-to-br from-gray-900 to-gray-800 flex justify-center items-center">
@@ -124,7 +128,11 @@ const Projects = () => {
                             <motion.div
                                 initial={{ opacity: 0, y: 100 }}
                                 whileInView={{ opacity: 1, y: 0 }} 
-                                transition={{ duration: 1 }}
+                                transition={{ 
+                                    duration: 0.8,
+                                    delay: (projects.length + 1) * 0.2, // Stagger based on position
+                                    ease: [0.25, 0.8, 0.25, 1],
+                                }}
                                 viewport={{ once: true }} 
                                 key={index} className="group bg-gray-200 dark:bg-gray-800 rounded-xl border border-gray-300 dark:border-gray-600 backdrop-blur-md hover:shadow-md active:shadow-md transition-colors duration-300 overflow-hidden h-fit md:h-96 flex flex-col">
                                 <div className="h-32 md:h-2/5 bg-gradient-to-br from-gray-900 to-gray-800 flex justify-center items-center">
