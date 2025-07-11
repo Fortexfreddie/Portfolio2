@@ -42,7 +42,7 @@ const Stack = () => {
         },
         {
             name: "Express",
-            icon: <SiExpress className="text-gray-300" size={36} />,
+            icon: <SiExpresss className="text-gray-300" size={36} />,
             percentage: 10
         }
     ];
