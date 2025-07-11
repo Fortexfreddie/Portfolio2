@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { Typewriter } from "react-simple-typewriter";
 import freddie from "../assets/image.png";
-import freddie2 from "../assets/photo_2025.jpg";
+import freddie2 from "../assets/photo_2.jpg";
 import { ExternalLink, Download } from 'lucide-react';
 
 const Hero = () => {
