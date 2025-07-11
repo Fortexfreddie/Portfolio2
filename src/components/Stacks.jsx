@@ -15,7 +15,7 @@ const techStacks = [
     {
         category: "Backend Development",
         items: [
-        { name: "PHP", icon: <SiPhp className="text-gray-300" size={36} />, percentage: 80 },
+        { name: "PHP", icon: <SiPhp className="text-indigo-400" size={36} />, percentage: 80 },
         { name: "Laravel", icon: <SiLaravel className="text-red-500" size={36} />, percentage: 25 },
         { name: "Node.js", icon: <SiNodedotjs className="text-green-500" size={36} />, percentage: 30 },
         { name: "Express", icon: <SiExpress className="text-gray-300" size={36} />, percentage: 10 },
