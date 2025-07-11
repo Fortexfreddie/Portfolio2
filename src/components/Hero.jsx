@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { Typewriter } from "react-simple-typewriter";
 import freddie from "../assets/image.png";
+import freddie2 from "../assets/photo_2025.png";
 import { ExternalLink, Download } from 'lucide-react';
 
 const Hero = () => {
@@ -89,7 +90,7 @@ const Hero = () => {
                     <div className="flex flex-col items-center space-y-6 w-full lg:w-1/2">
                         <div className="">
                             <motion.img
-                            src={freddie}
+                            src={freddie2}
                             alt="Freddie"
                             initial={{ opacity: 0, scale: 0 }}
                             animate={{ opacity: 1, scale: 1 }}
