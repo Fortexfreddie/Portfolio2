@@ -2,6 +2,7 @@ import Conference from "../assets/images/conference.png";
 import Examly from "../assets/images/Examly.png";
 import skydrone from "../assets/images/skydrone.png";
 import lodgeFinder from "../assets/images/lodgeFinder.png";
+import Troopi from "../assets/images/Troopi.png";
 import lifestyle from "../assets/images/lifstyle.png";
 import { Code, ExternalLink } from 'lucide-react';
 import { motion } from "framer-motion";
@@ -56,13 +57,13 @@ const projects = [
 
 const inDevelopmentProject = [ 
     {
-        title: "In Progress",
-        url: "#",
-        description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequuntur, laudantium",
-        imgText: "IP",
-        repo: "",
-        alt: "In Progress",
-        tags: ["In Progress", "HTML", "CSS", "JavaScript"],
+        title: "Troopi",
+        url: "https://troopi.vercel.app/",
+        description: "A futuristic Pi-powered marketplace combining freelance services and physical products, with Pi and fiat payment integration.",
+        image: Troopi,
+        repo: "https://github.com/Fortexfreddie/Troopi",
+        alt: "Troopi Marketplace",
+        tags: ["Pi Network", "React", "Tailwind", "Framer Motion"],
     }
 ];
 const Projects = () => {
@@ -73,6 +74,56 @@ const Projects = () => {
                 <div className="mt-4 h-0.5 w-32 mx-auto bg-gradient-to-r from-gray-100 via-gray-400 to-gray-100 dark:from-gray-900 dark:via-gray-400 dark:to-gray-900 transition-colors duration-300"></div>
                 <p className="mt-6 text-lg text-gray-600 dark:text-gray-300 text-center transition-colors duration-300">“Projects that showcase my frontend skills and full-stack capabilities.”</p>
                 <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8 mt-8">
+                   {
+                        inDevelopmentProject.map((project, index) => (
+                            <motion.div
+                                initial={{ opacity: 0, y: 100 }}
+                                whileInView={{ opacity: 1, y: 0 }} 
+                                transition={{ 
+                                    duration: 0.8,
+                                    delay: 0.2,
+                                    ease: [0.25, 0.8, 0.25, 1],
+                                }}
+                                viewport={{ once: true }} 
+                                key={index} className="group bg-gray-200 dark:bg-gray-800 rounded-xl border border-gray-300 dark:border-gray-600 backdrop-blur-md hover:shadow-md active:shadow-md transition-colors duration-300 overflow-hidden h-fit md:h-96 flex flex-col">
+                                <div className="h-32 md:h-2/5 bg-gradient-to-br from-gray-900 to-gray-800 flex justify-center items-center">
+                                    <div className="relative w-full h-full flex justify-center items-center">
+                                        <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-0 group-hover:opacity-100 group-active:opacity-100 transition-opacity duration-300 flex items-end p-6">
+                                            <a href={project.url} target="_blank" className="inline-flex items-center gap-2 px-4 py-2 text-gray-300 rounded-lg bg-white/10 backdrop-blur-sm border border-white/10 hover:bg-white/30 active:bg-white/30 hover:border-gray-500 transition-colors duration-300">
+                                                <ExternalLink size={18} strokeWidth={2} />
+                                                <p className="text-sm font-medium">Visit Live Site</p>
+                                            </a>
+                                        </div>
+                                        <img loading="lazy" src={project.image} alt={project.alt} className="w-full h-full object-cover" />
+                                    </div>
+                                </div>
+                                <div className="px-6 py-6 md:py-4">
+                                    <div className="flex flex-col">
+                                        <div className="flex flex-row justify-between items-center">
+                                            <p className="text-lg font-semibold text-gray-600 dark:text-gray-50 transition-colors duration-300 mb-4">{project.title}</p>
+                                            <span className="text-sm font-medium px-3 py-1 rounded-full bg-yellow-500/30 border border-yellow-600/20 dark:border-yellow-500/40 text-yellow-700 dark:text-yellow-300 transition-colors duration-300 mb-4">In Development</span>
+                                        </div>
+                                        <p className="text-sm text-gray-600 dark:text-gray-400 transition-colors duration-300 mb-4 md:line-clamp-2">{project.description}</p>
+                                        <div className="flex flex-row flex-wrap gap-2 mb-5">
+                                            {project.tags.map((tag, tagIndex) => (
+                                                <span key={tagIndex} className="text-xs text-gray-600 dark:text-gray-50 font-medium bg-gray-50 dark:bg-gray-800 rounded border border-gray-200 dark:border-gray-600 py-1 px-2 transition-colors duration-300">{tag}</span>
+                                            ))}
+                                        </div>
+                                        <div className="flex flex-row gap-3">
+                                            <a href={project.url} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 px-4 py-2 text-gray-300 rounded-lg bg-gray-800 dark:bg-gray-700 hover:bg-gray-900 transition-colors duration-300">
+                                                <ExternalLink size={18} strokeWidth={2} />
+                                                <p className="text-sm font-medium">Demo</p>
+                                            </a>
+                                            <a href={project.repo} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 px-4 py-2 text-gray-300 rounded-lg bg-gray-800 dark:bg-gray-700 hover:bg-gray-900 transition-colors duration-300">
+                                                <Code size={18} strokeWidth={2} />
+                                                <p className="text-sm font-medium">Details</p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </motion.div>
+                        ))
+                    }                    
                     {
                         projects.map((project, index) => (
                             <motion.div
@@ -80,7 +131,7 @@ const Projects = () => {
                                 whileInView={{ opacity: 1, y: 0 }} 
                                 transition={{ 
                                     duration: 0.8,
-                                    delay: index * 0.2, // Stagger based on position
+                                    delay: (inDevelopmentProject.length + 1 + index) * 0.2, // Stagger based on position
                                     ease: [0.25, 0.8, 0.25, 1],
                                 }}
                                 viewport={{ once: true }} 
@@ -117,56 +168,6 @@ const Projects = () => {
                                                 <Code size={18} strokeWidth={2} />
                                                 <p className="text-sm font-medium">Details</p>
                                             </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </motion.div>
-                        ))
-                    }
-                    {
-                        inDevelopmentProject.map((project, index) => (
-                            <motion.div
-                                initial={{ opacity: 0, y: 100 }}
-                                whileInView={{ opacity: 1, y: 0 }} 
-                                transition={{ 
-                                    duration: 0.8,
-                                    delay: (projects.length + 1) * 0.2, // Stagger based on position
-                                    ease: [0.25, 0.8, 0.25, 1],
-                                }}
-                                viewport={{ once: true }} 
-                                key={index} className="group bg-gray-200 dark:bg-gray-800 rounded-xl border border-gray-300 dark:border-gray-600 backdrop-blur-md hover:shadow-md active:shadow-md transition-colors duration-300 overflow-hidden h-fit md:h-96 flex flex-col">
-                                <div className="h-32 md:h-2/5 bg-gradient-to-br from-gray-900 to-gray-800 flex justify-center items-center">
-                                    <div className="relative w-full h-full flex justify-center items-center">
-                                        <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-0 group-hover:opacity-100 group-active:opacity-100 transition-opacity duration-300 flex items-end p-6">
-                                            <a onClick={(e) => e.preventDefault()} href={project.url} target="_blank" className="inline-flex items-center gap-2 px-4 py-2 text-gray-300 rounded-lg bg-white/10 backdrop-blur-sm border border-white/10 hover:bg-white/30 active:bg-white/30 hover:border-gray-500 transition-colors duration-300">
-                                                <ExternalLink size={18} strokeWidth={2} />
-                                                <p className="text-sm font-medium">Visit Live Site</p>
-                                            </a>
-                                        </div>
-                                        <p className="text-4xl font-bold text-gray-700">{project.imgText}</p>
-                                    </div>
-                                </div>
-                                <div className="px-6 py-4">
-                                    <div className="flex flex-col">
-                                        <div className="flex flex-row justify-between items-center">
-                                            <p className="text-lg font-semibold text-gray-600 dark:text-gray-50 transition-colors duration-300 mb-4">{project.title}</p>
-                                            <span className="text-sm font-medium px-3 py-1 rounded-full bg-yellow-500/30 border border-yellow-600/20 dark:border-yellow-500/40 text-yellow-700 dark:text-yellow-300 transition-colors duration-300 mb-4">In Development</span>
-                                        </div>
-                                        <p className="text-sm text-gray-600 dark:text-gray-400 transition-colors duration-300 mb-4 line-clamp-2">{project.description}</p>
-                                        <div className="flex flex-row flex-wrap gap-2 mb-5">
-                                            {project.tags.map((tag, tagIndex) => (
-                                                <span key={tagIndex} className="text-xs text-gray-600 dark:text-gray-50 font-medium bg-gray-50 dark:bg-gray-800 rounded border border-gray-200 dark:border-gray-600 py-1 px-2 transition-colors duration-300">{tag}</span>
-                                            ))}
-                                        </div>
-                                        <div className="flex flex-row gap-3">
-                                            <a onClick={(e) => e.preventDefault()} href={project.url} target="_blank" className="flex items-center gap-2 px-4 py-2 text-gray-300 rounded-lg bg-gray-800 dark:bg-gray-700 hover:bg-gray-900 transition-colors duration-300">
-                                                <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" height="16" width="16" xmlns="http://www.w3.org/2000/svg"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
-                                                <p className="text-sm font-medium">Demo</p>
-                                            </a>
-                                            <button className="flex items-center gap-2 px-4 py-2 text-gray-300 rounded-lg bg-gray-800 dark:bg-gray-700 hover:bg-gray-900 transition-colors duration-300">
-                                                <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" height="16" width="16" xmlns="http://www.w3.org/2000/svg"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
-                                                <p className="text-sm font-medium">Details</p>
-                                            </button>
                                         </div>
                                     </div>
                                 </div>

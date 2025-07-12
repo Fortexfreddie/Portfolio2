@@ -1,4 +1,4 @@
-import { SiMongodb, SiTailwindcss, SiDart, SiPhp, SiJavascript, SiGithub, SiGit, SiReact, SiFlutter, SiMysql, SiLaravel, SiNodedotjs, SiExpress } from 'react-icons/si';
+import { SiMongodb, SiTailwindcss, SiDart, SiPhp, SiJavascript, SiGithub, SiGit, SiReact, SiFlutter, SiMysql, SiLaravel, SiNodedotjs, SiExpress, SiTypescript } from 'react-icons/si';
 import { motion } from "framer-motion";
 
 
@@ -33,7 +33,7 @@ const techStacks = [
     {
         category: "Currently Learning",
         items: [
-        { name: "TypeScript", icon: <SiJavascript className="text-blue-400" size={36} />, percentage: 15 },
+        { name: "TypeScript", icon: <SiTypescript className="text-blue-400" size={36} />, percentage: 15 },
         { name: "Dart", icon: <SiDart className="text-cyan-300" size={36} />, percentage: 50 },
         { name: "Laravel", icon: <SiLaravel className="text-red-500" size={36} />, percentage: 25 },
         { name: "Node.js", icon: <SiNodedotjs className="text-green-500" size={36} />, percentage: 30 },
