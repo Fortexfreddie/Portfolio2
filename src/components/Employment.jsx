@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import useIsMobile from '../hooks/useIsMobile';
 
 const experience = [
     {
@@ -27,6 +28,7 @@ const education = {
     description: "Pursuing a comprehensive curriculum that combines theoretical foundations and practical applications of computer science, preparing for a career in software development."
 };
 const Employment = () => {
+    const isMobile = useIsMobile();
     return (  
         <section className="pt-20 pb-10 w-full transition-colors duration-300">
             <div className="lg:container mx-auto px-6 md:px-8 lg:px-12">
@@ -40,7 +42,7 @@ const Employment = () => {
                             whileInView={{ opacity: 1, y: 0 }} 
                             transition={{ 
                                 duration: 0.8,
-                                delay: i * 0.2, // Stagger based on position
+                                delay: i * (isMobile ? 0.1 : 0.2), // Stagger based on position and screen size
                                 ease: [0.25, 0.8, 0.25, 1],
                             }}
                             viewport={{ once: true }} 
@@ -64,7 +66,7 @@ const Employment = () => {
                     whileInView={{ opacity: 1, y: 0 }} 
                     transition={{ 
                         duration: 0.8,
-                        delay: 0.2,
+                        delay: isMobile ? 0.1 : 0.2, // Stagger based on screen size
                         ease: [0.25, 0.8, 0.25, 1],
                     }}
                     viewport={{ once: true }} 

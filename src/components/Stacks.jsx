@@ -1,47 +1,56 @@
-import { SiMongodb, SiTailwindcss, SiDart, SiPhp, SiJavascript, SiGithub, SiGit, SiReact, SiFlutter, SiMysql, SiLaravel, SiNodedotjs, SiExpress, SiTypescript } from 'react-icons/si';
+import { SiMongodb, SiTailwindcss, SiDart, SiPhp, SiJavascript, SiGithub, SiGit, SiReact, SiFlutter, SiMysql, SiLaravel, SiNodedotjs, SiExpress, SiTypescript, SiCss3, SiBootstrap, SiVercel, SiPostman, SiNetlify, SiDocker } from 'react-icons/si';
 import { motion } from "framer-motion";
-
+import useIsMobile from '../hooks/useIsMobile';
 
 const techStacks = [
     {
         category: "Frontend Development",
         items: [
-        { name: "React", icon: <SiReact className="text-blue-400" size={36} />, percentage: 75 },
-        { name: "Javascript", icon: <SiJavascript className="text-yellow-400" size={36} />, percentage: 80 },
-        { name: "Tailwind CSS", icon: <SiTailwindcss className="text-cyan-300" size={36} />, percentage: 85 },
-        { name: "Flutter", icon: <SiFlutter className="text-cyan-300" size={36} />, percentage: 20 },
+            { name: "React", icon: <SiReact className="text-blue-400" size={36} />, percentage: 75 },
+            { name: "JavaScript", icon: <SiJavascript className="text-yellow-400" size={36} />, percentage: 80 },
+            { name: "Tailwind CSS", icon: <SiTailwindcss className="text-cyan-300" size={36} />, percentage: 85 },
+            { name: "Flutter", icon: <SiFlutter className="text-cyan-300" size={36} />, percentage: 35 },
+            { name: "CSS", icon: <SiCss3 className="text-blue-500" size={36} />, percentage: 85 },
+            { name: "Bootstrap", icon: <SiBootstrap className="text-purple-500" size={36} />, percentage: 60 }
         ],
     },
     {
-        category: "Backend Development",
+        category: "Backend & Databases",
         items: [
-        { name: "PHP", icon: <SiPhp className="text-indigo-500" size={36} />, percentage: 80 },
-        { name: "Laravel", icon: <SiLaravel className="text-red-500" size={36} />, percentage: 25 },
-        { name: "Node.js", icon: <SiNodedotjs className="text-green-500" size={36} />, percentage: 30 },
-        { name: "Express", icon: <SiExpress className="text-gray-300" size={36} />, percentage: 10 },
+            { name: "PHP", icon: <SiPhp className="text-indigo-500" size={36} />, percentage: 80 },
+            { name: "Laravel", icon: <SiLaravel className="text-red-500" size={36} />, percentage: 25 },
+            { name: "Node.js", icon: <SiNodedotjs className="text-green-500" size={36} />, percentage: 30 },
+            { name: "Express", icon: <SiExpress className="text-gray-300" size={36} />, percentage: 10 },
+            { name: "MySQL", icon: <SiMysql className="text-cyan-700" size={36} />, percentage: 80 },
+            { name: "MongoDB", icon: <SiMongodb className="text-green-500" size={36} />, percentage: 25 }
         ],
     },
     {
-        category: "Database and Version Control",
+        category: "Tools & Platforms",
         items: [
-        { name: "MySQL", icon: <SiMysql className="text-cyan-700" size={36} />, percentage: 80 },
-        { name: "MongoDB", icon: <SiMongodb className="text-green-500" size={36} />, percentage: 25 },
-        { name: "GitHub", icon: <SiGithub className="text-gray-300" size={36} />, percentage: 70 },
-        { name: "Git", icon: <SiGit className="text-orange-500" size={36} />, percentage: 50 },
+            { name: "Git", icon: <SiGit className="text-orange-500" size={36} />, percentage: 50 },
+            { name: "GitHub", icon: <SiGithub className="text-gray-300" size={36} />, percentage: 70 },
+            { name: "Vercel", icon: <SiVercel className="text-gray-300" size={36} />, percentage: 70 },
+            { name: "Netlify", icon: <SiNetlify className="text-teal-400" size={36} />, percentage: 70 },
+            { name: "Postman", icon: <SiPostman className="text-orange-500" size={36} />, percentage: 65 },
+            { name: "Docker", icon: <SiDocker className="text-sky-500" size={36} />, percentage: 20 },
         ],
     },
     {
         category: "Currently Learning",
         items: [
-        { name: "TypeScript", icon: <SiTypescript className="text-blue-400" size={36} />, percentage: 15 },
-        { name: "Dart", icon: <SiDart className="text-cyan-300" size={36} />, percentage: 50 },
-        { name: "Laravel", icon: <SiLaravel className="text-red-500" size={36} />, percentage: 25 },
-        { name: "Node.js", icon: <SiNodedotjs className="text-green-500" size={36} />, percentage: 30 },
-        ],
-    },
+            { name: "TypeScript", icon: <SiTypescript className="text-blue-400" size={36} />, percentage: 15 },
+            { name: "Dart", icon: <SiDart className="text-cyan-300" size={36} />, percentage: 50 },
+            { name: "Laravel", icon: <SiLaravel className="text-red-500" size={36} />, percentage: 25 },
+            { name: "Node.js", icon: <SiNodedotjs className="text-green-500" size={36} />, percentage: 30 },
+            { name: "Docker", icon: <SiDocker className="text-sky-500" size={36} />, percentage: 20 },
+            { name: "MongoDB", icon: <SiMongodb className="text-green-500" size={36} />, percentage: 25 }
+        ]
+    }
 ];
 
 const Stack = () => {
+    const isMobile = useIsMobile();
     return (  
         <section id="Stacks" className="bg-gray-50 dark:bg-gray-900 pt-20 pb-10 w-full transition-colors duration-300">
             <div className="lg:container mx-auto px-6 md:px-8 lg:px-12">
@@ -57,13 +66,13 @@ const Stack = () => {
                                 whileInView={{ opacity: 1, y: 0 }} 
                                 transition={{ 
                                     duration: 0.8,
-                                    delay: index * 0.2, // Stagger based on position
-                                    ease: [0.25, 0.8, 0.25, 1],
+                                    delay: index * (isMobile ? 0.1 : 0.2), // Stagger based on position and screen size
+                                    ease: [0.25, 0.8, 0.25, 1], // cubic-bezier curve
                                 }}
                                 viewport={{ once: true }}
                                 className="bg-gray-200 dark:bg-gray-800 rounded-xl p-6 border border-gray-300 dark:border-gray-600 backdrop-blur-md transition-colors duration-300">
                                 <p className="text-lg font-semibold text-gray-600 dark:text-gray-50 transition-colors duration-300 mb-4">{techStack.category}</p>
-                                <div className="grid grid-cols-2 gap-4">
+                                <div className="grid grid-cols-2 xl:grid-cols-3 gap-4">
                                     {
                                         techStack.items.map((item, i) => (
                                             <motion.div

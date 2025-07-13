@@ -1,6 +1,7 @@
 import { Code, Globe, Smartphone } from 'lucide-react';
-import { SiPhp, SiReact, SiMysql, SiGithub } from 'react-icons/si';
+import { SiPhp, SiReact, SiMysql, SiGithub, SiFlutter } from 'react-icons/si';
 import { motion } from "framer-motion";
+import useIsMobile from '../hooks/useIsMobile';
 
 const experiences = [
     {
@@ -48,6 +49,13 @@ const Expertise = [
         icon: <SiPhp className="text-gray-300" size={36} />
     },
     {
+        title: "Mobile Development",
+        years: "0.2 years",
+        description: "Creating performant cross-platform mobile apps using Flutter and Dart.",
+        tools: ["Flutter", "Dart"],
+        icon: <SiFlutter className="text-cyan-400" size={36} />
+    },
+    {
         title: "Database Systems",
         years: "2 years",
         description: "Designing and optimizing relational and NoSQL databases for performance and scalability.",
@@ -56,7 +64,7 @@ const Expertise = [
     },
     {
         title: "Community Contributions",
-        years: "Ongoing",
+        years: "0.5 years",
         description: "Sharing knowledge through blog posts, GitHub contributions, and open-source collaborations.",
         tools: ["GitHub", "Git"],
         icon: <SiGithub className="text-gray-300" size={36} />
@@ -66,6 +74,7 @@ const Expertise = [
 
 
 const Experience = () => {
+    const isMobile = useIsMobile();
     return (  
         <section id="Experience" className="pt-20 pb-10 w-full transition-colors duration-300">
             <div className="lg:container mx-auto px-6 md:px-8 lg:px-12">
@@ -80,7 +89,7 @@ const Experience = () => {
                                 whileInView={{ opacity: 1, y: 0 }} 
                                 transition={{ 
                                     duration: 0.8,
-                                    delay: index * 0.2, // Stagger based on position
+                                    delay: index * (isMobile ? 0.1 : 0.2), // Stagger based on position and screen size
                                     ease: [0.25, 0.8, 0.25, 1],
                                 }}
                                 viewport={{ once: true }}
@@ -118,7 +127,7 @@ const Experience = () => {
                                 whileInView={{ opacity: 1, y: 0 }} 
                                 transition={{ 
                                     duration: 0.8,
-                                    delay: index * 0.2, // Stagger based on position
+                                    delay: index * (isMobile ? 0.1 : 0.2), // Stagger based on position and screen size
                                     ease: [0.25, 0.8, 0.25, 1],
                                 }}
                                 viewport={{ once: true }}
