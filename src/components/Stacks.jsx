@@ -39,7 +39,7 @@ const techStacks = [
     {
         category: "Currently Learning",
         items: [
-            { name: "TypeScript", icon: <SiTypescript className="text-blue-400" size={36} />, percentage: 15 },
+            { name: "TypeScript", icon: <SiTypescript className="text-blue-400" size={36} />, percentage: 60 },
             { name: "Dart", icon: <SiDart className="text-cyan-300" size={36} />, percentage: 50 },
             { name: "Laravel", icon: <SiLaravel className="text-red-500" size={36} />, percentage: 25 },
             { name: "Node.js", icon: <SiNodedotjs className="text-green-500" size={36} />, percentage: 30 },
