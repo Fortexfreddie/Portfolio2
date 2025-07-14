@@ -11,7 +11,7 @@ const techStacks = [
             { name: "Tailwind CSS", icon: <SiTailwindcss className="text-cyan-300" size={36} />, percentage: 85 },
             { name: "Flutter", icon: <SiFlutter className="text-cyan-300" size={36} />, percentage: 35 },
             { name: "CSS", icon: <SiCss3 className="text-blue-500" size={36} />, percentage: 85 },
-            { name: "TypeScript", icon: <SiTypescript className="text-blue-400" size={36} />, percentage: 60 },
+            { name: "TypeScript", icon: <SiTypescript className="text-blue-400" size={36} />, percentage: 70 },
         ],
     },
     {
