@@ -1,4 +1,4 @@
-import { SiMongodb, SiTailwindcss, SiDart, SiPhp, SiJavascript, SiGithub, SiGit, SiReact, SiFlutter, SiMysql, SiLaravel, SiNodedotjs, SiExpress, SiTypescript, SiCss3, SiBootstrap, SiVercel, SiPostman, SiNetlify, SiDocker } from 'react-icons/si';
+import { SiMongodb, SiTailwindcss, SiDart, SiPhp, SiJavascript, SiGithub, SiGit, SiReact, SiFlutter, SiMysql, SiLaravel, SiNodedotjs, SiExpress, SiTypescript, SiCss3, SiNextdotjs, SiVercel, SiPostman, SiNetlify, SiDocker } from 'react-icons/si';
 import { motion } from "framer-motion";
 import useIsMobile from '../hooks/useIsMobile';
 
@@ -11,7 +11,7 @@ const techStacks = [
             { name: "Tailwind CSS", icon: <SiTailwindcss className="text-cyan-300" size={36} />, percentage: 85 },
             { name: "Flutter", icon: <SiFlutter className="text-cyan-300" size={36} />, percentage: 35 },
             { name: "CSS", icon: <SiCss3 className="text-blue-500" size={36} />, percentage: 85 },
-            { name: "Bootstrap", icon: <SiBootstrap className="text-purple-500" size={36} />, percentage: 60 }
+            { name: "TypeScript", icon: <SiTypescript className="text-blue-400" size={36} />, percentage: 60 },
         ],
     },
     {
@@ -39,8 +39,8 @@ const techStacks = [
     {
         category: "Currently Learning",
         items: [
-            { name: "TypeScript", icon: <SiTypescript className="text-blue-400" size={36} />, percentage: 60 },
             { name: "Dart", icon: <SiDart className="text-cyan-300" size={36} />, percentage: 50 },
+            { name: "Next.js", icon: <SiNextdotjs className="text-black" size={36} />, percentage: 20 },
             { name: "Laravel", icon: <SiLaravel className="text-red-500" size={36} />, percentage: 25 },
             { name: "Node.js", icon: <SiNodedotjs className="text-green-500" size={36} />, percentage: 30 },
             { name: "Docker", icon: <SiDocker className="text-sky-500" size={36} />, percentage: 20 },
