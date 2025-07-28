@@ -3,50 +3,146 @@ import { motion } from "framer-motion";
 import useIsMobile from '../hooks/useIsMobile';
 
 const techStacks = [
-    {
-        category: "Frontend Development",
-        items: [
-            { name: "React", icon: <SiReact className="text-blue-400" size={36} />, percentage: 75 },
-            { name: "JavaScript", icon: <SiJavascript className="text-yellow-400" size={36} />, percentage: 80 },
-            { name: "Tailwind CSS", icon: <SiTailwindcss className="text-cyan-300" size={36} />, percentage: 85 },
-            { name: "Flutter", icon: <SiFlutter className="text-cyan-300" size={36} />, percentage: 35 },
-            { name: "CSS", icon: <SiCss3 className="text-blue-500" size={36} />, percentage: 85 },
-            { name: "TypeScript", icon: <SiTypescript className="text-blue-400" size={36} />, percentage: 70 },
-        ],
-    },
-    {
-        category: "Backend & Databases",
-        items: [
-            { name: "PHP", icon: <SiPhp className="text-indigo-500" size={36} />, percentage: 80 },
-            { name: "Laravel", icon: <SiLaravel className="text-red-500" size={36} />, percentage: 25 },
-            { name: "Node.js", icon: <SiNodedotjs className="text-green-500" size={36} />, percentage: 30 },
-            { name: "Express", icon: <SiExpress className="text-gray-300" size={36} />, percentage: 10 },
-            { name: "MySQL", icon: <SiMysql className="text-cyan-700" size={36} />, percentage: 80 },
-            { name: "MongoDB", icon: <SiMongodb className="text-green-500" size={36} />, percentage: 25 }
-        ],
-    },
-    {
-        category: "Tools & Platforms",
-        items: [
-            { name: "Git", icon: <SiGit className="text-orange-500" size={36} />, percentage: 50 },
-            { name: "GitHub", icon: <SiGithub className="text-gray-300" size={36} />, percentage: 70 },
-            { name: "Vercel", icon: <SiVercel className="text-gray-300" size={36} />, percentage: 70 },
-            { name: "Netlify", icon: <SiNetlify className="text-teal-400" size={36} />, percentage: 70 },
-            { name: "Postman", icon: <SiPostman className="text-orange-500" size={36} />, percentage: 65 },
-            { name: "Docker", icon: <SiDocker className="text-sky-500" size={36} />, percentage: 20 },
-        ],
-    },
-    {
-        category: "Currently Learning",
-        items: [
-            { name: "Dart", icon: <SiDart className="text-cyan-300" size={36} />, percentage: 50 },
-            { name: "Next.js", icon: <SiNextdotjs className="text-black" size={36} />, percentage: 20 },
-            { name: "Laravel", icon: <SiLaravel className="text-red-500" size={36} />, percentage: 25 },
-            { name: "Node.js", icon: <SiNodedotjs className="text-green-500" size={36} />, percentage: 30 },
-            { name: "Docker", icon: <SiDocker className="text-sky-500" size={36} />, percentage: 20 },
-            { name: "MongoDB", icon: <SiMongodb className="text-green-500" size={36} />, percentage: 25 }
-        ]
-    }
+  {
+    category: "Frontend Development",
+    items: [
+      {
+        name: "React",
+        icon: <SiReact className="text-blue-400" size={36} />,
+        percentage: 75,
+      },
+      {
+        name: "JavaScript",
+        icon: <SiJavascript className="text-yellow-400" size={36} />,
+        percentage: 80,
+      },
+      {
+        name: "Tailwind CSS",
+        icon: <SiTailwindcss className="text-cyan-300" size={36} />,
+        percentage: 85,
+      },
+      {
+        name: "Flutter",
+        icon: <SiFlutter className="text-cyan-300" size={36} />,
+        percentage: 35,
+      },
+      {
+        name: "CSS",
+        icon: <SiCss3 className="text-blue-500" size={36} />,
+        percentage: 85,
+      },
+      {
+        name: "TypeScript",
+        icon: <SiTypescript className="text-blue-400" size={36} />,
+        percentage: 70,
+      },
+    ],
+  },
+  {
+    category: "Backend & Databases",
+    items: [
+      {
+        name: "PHP",
+        icon: <SiPhp className="text-indigo-500" size={36} />,
+        percentage: 80,
+      },
+      {
+        name: "Laravel",
+        icon: <SiLaravel className="text-red-500" size={36} />,
+        percentage: 25,
+      },
+      {
+        name: "Node.js",
+        icon: <SiNodedotjs className="text-green-500" size={36} />,
+        percentage: 30,
+      },
+      {
+        name: "Express",
+        icon: <SiExpress className="text-gray-300" size={36} />,
+        percentage: 10,
+      },
+      {
+        name: "MySQL",
+        icon: <SiMysql className="text-cyan-700" size={36} />,
+        percentage: 80,
+      },
+      {
+        name: "MongoDB",
+        icon: <SiMongodb className="text-green-500" size={36} />,
+        percentage: 25,
+      },
+    ],
+  },
+  {
+    category: "Tools & Platforms",
+    items: [
+      {
+        name: "Git",
+        icon: <SiGit className="text-orange-500" size={36} />,
+        percentage: 50,
+      },
+      {
+        name: "GitHub",
+        icon: <SiGithub className="text-gray-300" size={36} />,
+        percentage: 70,
+      },
+      {
+        name: "Vercel",
+        icon: <SiVercel className="text-gray-300" size={36} />,
+        percentage: 70,
+      },
+      {
+        name: "Netlify",
+        icon: <SiNetlify className="text-teal-400" size={36} />,
+        percentage: 70,
+      },
+      {
+        name: "Postman",
+        icon: <SiPostman className="text-orange-500" size={36} />,
+        percentage: 65,
+      },
+      {
+        name: "Docker",
+        icon: <SiDocker className="text-sky-500" size={36} />,
+        percentage: 50,
+      },
+    ],
+  },
+  {
+    category: "Currently Learning",
+    items: [
+      {
+        name: "Dart",
+        icon: <SiDart className="text-cyan-300" size={36} />,
+        percentage: 50,
+      },
+      {
+        name: "Next.js",
+        icon: <SiNextdotjs className="text-black" size={36} />,
+        percentage: 20,
+      },
+      {
+        name: "Laravel",
+        icon: <SiLaravel className="text-red-500" size={36} />,
+        percentage: 25,
+      },
+      {
+        name: "Node.js",
+        icon: <SiNodedotjs className="text-green-500" size={36} />,
+        percentage: 30,
+      },
+      {
+        name: "Docker",
+        icon: <SiDocker className="text-sky-500" size={36} />,
+        percentage: 50,
+      },
+      {
+        name: "MongoDB",
+        icon: <SiMongodb className="text-green-500" size={36} />,
+        percentage: 25,
+      },
+    ],
+  },
 ];
 
 const Stack = () => {
