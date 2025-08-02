@@ -44,7 +44,7 @@ const techStacks = [
       {
         name: "Flutter",
         icon: <SiFlutter className="text-cyan-300" size={36} />,
-        percentage: 35,
+        percentage: 45,
       },
       {
         name: "CSS",
@@ -134,7 +134,7 @@ const techStacks = [
       {
         name: "Dart",
         icon: <SiDart className="text-cyan-300" size={36} />,
-        percentage: 50,
+        percentage: 65,
       },
       {
         name: "Express",
