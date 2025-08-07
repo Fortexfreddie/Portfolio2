@@ -1,6 +1,6 @@
 import Conference from "../assets/images/conference.png";
 import Examly from "../assets/images/Examly.png";
-import skydrone from "../assets/images/skydrone.png";
+// import skydrone from "../assets/images/skydrone.png";
 import lodgeFinder from "../assets/images/lodgeFinder.png";
 import Troopi from "../assets/images/Troopi.png";
 import lifestyle from "../assets/images/lifstyle.png";
@@ -40,16 +40,16 @@ const projects = [
     alt: "Lodge Finder",
     tags: ["Lodge", "React", "Tailwind", "PHP", "MySQL"],
   },
-  {
-    title: "Skydrone",
-    url: "https://skydrones.netlify.app",
-    description:
-      "Skydrone's innovative drone technology is bringing the latest farming innovations to farms around the world.",
-    image: skydrone,
-    repo: "https://github.com/Fortexfreddie/SKYDRONE",
-    alt: "skydrone",
-    tags: ["Farms", "React", "CSS", "Tailwind"],
-  },
+  //   {
+  //     title: "Skydrone",
+  //     url: "https://skydrones.netlify.app",
+  //     description:
+  //       "Skydrone's innovative drone technology is bringing the latest farming innovations to farms around the world.",
+  //     image: skydrone,
+  //     repo: "https://github.com/Fortexfreddie/SKYDRONE",
+  //     alt: "skydrone",
+  //     tags: ["Farms", "React", "CSS", "Tailwind"],
+  //   },
   {
     title: "Examly",
     url: "https://examlyy.netlify.app",
