@@ -44,7 +44,7 @@ const techStacks = [
       {
         name: "Flutter",
         icon: <SiFlutter className="text-cyan-300" size={36} />,
-        percentage: 45,
+        percentage: 50,
       },
       {
         name: "CSS",
@@ -124,7 +124,7 @@ const techStacks = [
       {
         name: "Docker",
         icon: <SiDocker className="text-sky-500" size={36} />,
-        percentage: 60,
+        percentage: 65,
       },
     ],
   },
@@ -154,7 +154,7 @@ const techStacks = [
       {
         name: "Docker",
         icon: <SiDocker className="text-sky-500" size={36} />,
-        percentage: 60,
+        percentage: 65,
       },
       {
         name: "MongoDB",

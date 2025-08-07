@@ -4,56 +4,72 @@ import skydrone from "../assets/images/skydrone.png";
 import lodgeFinder from "../assets/images/lodgeFinder.png";
 import Troopi from "../assets/images/Troopi.png";
 import lifestyle from "../assets/images/lifstyle.png";
-import { Code, ExternalLink } from 'lucide-react';
+import nexus from "../assets/images/nexus.png";
+import { Code, ExternalLink } from "lucide-react";
 import { motion } from "framer-motion";
-import useIsMobile from '../hooks/useIsMobile';
+import useIsMobile from "../hooks/useIsMobile";
 
 const projects = [
-    {
-        title: "Lifestyle Blog",
-        url: "http://lifestyleblogs.netlify.app/",
-        description: "Lifestyle is your go-to blog for fresh trends, and inspiring stories in fashion, wellness, tech, and culture to stay informed every day.",
-        image: lifestyle,
-        repo: "https://github.com/Fortexfreddie/LIFESTYLEBLOG",
-        alt: "Lifestyle Blog",
-        tags: ["Blog", "React", "Tailwind", "PHP", "MySQL"]
-    },
-    {
-        title: "Lodge Finder",
-        url: "https://lodgefinders.netlify.app",
-        description: "A platform for finding and booking lodges, hotels, and guest houses.",
-        image: lodgeFinder,
-        repo: "https://github.com/Fortexfreddie/Lodge_Finder_Project",
-        alt: "Lodge Finder",
-        tags: ["Lodge", "React", "Tailwind", "PHP", "MySQL"]
-    },
-    {
-        title: "Skydrone",
-        url: "https://skydrones.netlify.app",
-        description: "Skydrone's innovative drone technology is bringing the latest farming innovations to farms around the world.",
-        image: skydrone,
-        repo: "https://github.com/Fortexfreddie/SKYDRONE",
-        alt: "skydrone",
-        tags: ["Farms", "React", "CSS", "Tailwind"]
-    },
-    {
-        title: "Examly",
-        url: "https://examlyy.netlify.app",
-        description: "The official certification Examination platform for Human-Computer interface.",
-        image: Examly,
-        repo: "https://github.com/Fortexfreddie/online-exam-platform",
-        alt: "Examly",
-        tags: ["Exams", "React", "AOS", "Express.js", "Tailwind"]
-    },
-    {
-        title: "Tech Maverick",
-        url: "https://techmaverick.freesite.online",
-        description: "A conference platform for hosting of conferences, events, seminars e.t.c",
-        image: Conference,
-        repo: "https://github.com/Fortexfreddie/Tech-Maverick",
-        alt: "Tech Maverick",
-        tags: ["Conference", "HTML", "CSS", "Bootstrap"]
-    }
+  {
+    title: "NFT Nexus",
+    url: "https://nft-nexus-pi.vercel.app/",
+    description:
+      "NFT Nexus is an AI-powered platform for exploring and analyzing NFTs with insights on rarity and market trends.",
+    image: nexus,
+    repo: "https://github.com/FrankLayza/nft-nexus",
+    alt: "NFT Nexus",
+    tags: ["NFT", "Typescript", "AI Agent", "JuliaOS", "React"],
+  },
+  {
+    title: "Lifestyle Blog",
+    url: "http://lifestyleblogs.netlify.app/",
+    description:
+      "Lifestyle is your go-to blog for fresh trends, and inspiring stories in fashion, wellness, tech, and culture to stay informed every day.",
+    image: lifestyle,
+    repo: "https://github.com/Fortexfreddie/LIFESTYLEBLOG",
+    alt: "Lifestyle Blog",
+    tags: ["Blog", "React", "Tailwind", "PHP", "MySQL"],
+  },
+  {
+    title: "Lodge Finder",
+    url: "https://lodgefinders.netlify.app",
+    description:
+      "A platform for finding and booking lodges, hotels, and guest houses.",
+    image: lodgeFinder,
+    repo: "https://github.com/Fortexfreddie/Lodge_Finder_Project",
+    alt: "Lodge Finder",
+    tags: ["Lodge", "React", "Tailwind", "PHP", "MySQL"],
+  },
+  {
+    title: "Skydrone",
+    url: "https://skydrones.netlify.app",
+    description:
+      "Skydrone's innovative drone technology is bringing the latest farming innovations to farms around the world.",
+    image: skydrone,
+    repo: "https://github.com/Fortexfreddie/SKYDRONE",
+    alt: "skydrone",
+    tags: ["Farms", "React", "CSS", "Tailwind"],
+  },
+  {
+    title: "Examly",
+    url: "https://examlyy.netlify.app",
+    description:
+      "The official certification Examination platform for Human-Computer interface.",
+    image: Examly,
+    repo: "https://github.com/Fortexfreddie/online-exam-platform",
+    alt: "Examly",
+    tags: ["Exams", "React", "AOS", "Express.js", "Tailwind"],
+  },
+  {
+    title: "Tech Maverick",
+    url: "https://techmaverick.freesite.online",
+    description:
+      "A conference platform for hosting of conferences, events, seminars e.t.c",
+    image: Conference,
+    repo: "https://github.com/Fortexfreddie/Tech-Maverick",
+    alt: "Tech Maverick",
+    tags: ["Conference", "HTML", "CSS", "Bootstrap"],
+  },
 ];
 
 const inDevelopmentProject = [ 
