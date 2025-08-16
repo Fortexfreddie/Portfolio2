@@ -5,11 +5,22 @@ import lodgeFinder from "../assets/images/lodgeFinder.png";
 import Troopi from "../assets/images/Troopi.png";
 import lifestyle from "../assets/images/lifstyle.png";
 import nexus from "../assets/images/nexus.png";
+import honeycrush from "../assets/images/honeycrush.png";
 import { Code, ExternalLink } from "lucide-react";
 import { motion } from "framer-motion";
 import useIsMobile from "../hooks/useIsMobile";
 
 const projects = [
+  {
+    title: "Honey Crush",
+    url: "https://honeycrush.netlify.app/",
+    description:
+      "Honey Crush is a play-to-earn puzzle game inspired by Candy Crush, powered by Honeycomb Protocol with Character Manager, Resource Manager, and Nectar Missions.",
+    image: honeycrush,
+    repo: "https://github.com/Fortexfreddie/HoneyCrush",
+    alt: "Honey Crush",
+    tags: ["GameFi", "Honeycomb Protocol", "Blockchain"],
+  },
   {
     title: "NFT Nexus",
     url: "https://nft-nexus-pi.vercel.app/",
