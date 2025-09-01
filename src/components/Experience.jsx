@@ -4,33 +4,33 @@ import { motion } from "framer-motion";
 import useIsMobile from '../hooks/useIsMobile';
 
 const experiences = [
-    {
-        title: "Full-Stack Development",
-        icon: <Code className="w-6 h-6 text-emerald-300" />,
-        years: 2,
-        description:
-        "I build end-to-end web applications using React, Tailwind CSS, PHP, Laravel, and MySQL—from clean UIs to secure APIs and scalable backend systems.",
-        tools: ["PHP", "React", "Tailwind", "MySQL"],
-        iconWrapper: "from-emerald-900/50 to-emerald-900 border-emerald-800/50",
-    },
-    {
-        title: "Web Applications",
-        icon: <Globe className="w-6 h-6 text-sky-300" />,
-        years: 2,
-        description:
-        "Specialized in building responsive and performant web platforms with modern UI libraries and frameworks tailored for the web.",
-        tools: ["HTML", "CSS", "JavaScript", "Vite"],
-        iconWrapper: "from-sky-900/50 to-sky-900 border-sky-800/50",
-    },
-    {
-        title: "Mobile Development",
-        icon: <Smartphone className="w-6 h-6 text-cyan-300" />,
-        years: 0.2,
-        description:
-        "Currently exploring mobile-first development using Flutter and Dart to create cross-platform apps with smooth performance and native-like UI.",
-        tools: ["Flutter", "Dart"],
-        iconWrapper: "from-cyan-900/50 to-cyan-900 border-cyan-800/50",
-    },
+  {
+    title: "Full-Stack Development",
+    icon: <Code className="w-6 h-6 text-emerald-300" />,
+    years: 2,
+    description:
+      "I build end-to-end web applications using React, Tailwind CSS, PHP, Laravel, and MySQL—from clean UIs to secure APIs and scalable backend systems.",
+    tools: ["PHP", "React", "Tailwind", "MySQL"],
+    iconWrapper: "from-emerald-900/50 to-emerald-900 border-emerald-800/50",
+  },
+  {
+    title: "Web Applications",
+    icon: <Globe className="w-6 h-6 text-sky-300" />,
+    years: 2,
+    description:
+      "Specialized in building responsive and performant web platforms with modern UI libraries and frameworks tailored for the web.",
+    tools: ["HTML", "CSS", "JavaScript", "Vite"],
+    iconWrapper: "from-sky-900/50 to-sky-900 border-sky-800/50",
+  },
+  {
+    title: "Mobile Development",
+    icon: <Smartphone className="w-6 h-6 text-cyan-300" />,
+    years: 0.6,
+    description:
+      "Currently exploring mobile-first development using Flutter and Dart to create cross-platform apps with smooth performance and native-like UI.",
+    tools: ["Flutter", "Dart"],
+    iconWrapper: "from-cyan-900/50 to-cyan-900 border-cyan-800/50",
+  },
 ];
 
 const Expertise = [
