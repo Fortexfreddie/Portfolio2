@@ -44,7 +44,7 @@ const techStacks = [
       {
         name: "Flutter",
         icon: <SiFlutter className="text-cyan-300" size={36} />,
-        percentage: 50,
+        percentage: 65,
       },
       {
         name: "CSS",
