@@ -50,7 +50,7 @@ const Expertise = [
     },
     {
         title: "Mobile Development",
-        years: "0.2 years",
+        years: "0.6 years",
         description: "Creating performant cross-platform mobile apps using Flutter and Dart.",
         tools: ["Flutter", "Dart"],
         icon: <SiFlutter className="text-cyan-400" size={36} />
@@ -64,7 +64,7 @@ const Expertise = [
     },
     {
         title: "Community Contributions",
-        years: "0.5 years",
+        years: "1 year",
         description: "Sharing knowledge through blog posts, GitHub contributions, and open-source collaborations.",
         tools: ["GitHub", "Git"],
         icon: <SiGithub className="text-gray-300" size={36} />
