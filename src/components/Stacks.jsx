@@ -79,7 +79,7 @@ const techStacks = [
       {
         name: "Express",
         icon: <SiExpress className="text-gray-300" size={36} />,
-        percentage: 10,
+        percentage: 30,
       },
       {
         name: "MySQL",
@@ -139,7 +139,7 @@ const techStacks = [
       {
         name: "Express",
         icon: <SiExpress className="text-gray-300" size={36} />,
-        percentage: 10,
+        percentage: 30,
       },
       {
         name: "Laravel",
