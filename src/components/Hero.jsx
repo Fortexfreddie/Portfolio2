@@ -57,7 +57,7 @@ const Hero = () => {
                     <div className="flex flex-col space-y-6 w-full lg:w-1/2">
                         <span className="px-3 py-1 bg-emerald-100 dark:bg-emerald-900/30 text-emerald-800 dark:text-emerald-400 rounded-full text-sm font-medium transition-colors duration-300 min-w-[8rem] w-fit">
                             <Typewriter
-                                words={['Frontend Developer', 'Backend Developer', 'Full Stack Developer', 'Tech Enthusiast']}
+                                words={['Full Stack Developer', 'Mobile App Developer', 'Flutter Developer', 'AI Agent Builder', 'Prompt Engineer']}
                                 loop={true}
                                 cursor
                                 cursorStyle="|"
