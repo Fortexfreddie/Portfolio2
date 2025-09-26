@@ -157,7 +157,7 @@ const Projects = () => {
               }}
               viewport={{ once: true }}
               key={index}
-              className="group bg-gray-200 dark:bg-gray-800 rounded-xl border border-gray-300 dark:border-gray-600 backdrop-blur-md hover:shadow-md active:shadow-md transition-colors duration-300 overflow-hidden h-fit md:h-[27rem] flex flex-col"
+              className="group bg-gray-200 dark:bg-gray-800 rounded-xl border border-gray-300 dark:border-gray-600 backdrop-blur-md hover:shadow-md active:shadow-md transition-colors duration-300 overflow-hidden h-fit md:h-[29rem] flex flex-col"
             >
               <div className="h-32 md:h-2/5 bg-gradient-to-br from-gray-900 to-gray-800 flex justify-center items-center">
                 <div className="relative w-full h-full flex justify-center items-center">
@@ -189,7 +189,7 @@ const Projects = () => {
                       In Development
                     </span>
                   </div>
-                  <p className="text-sm text-gray-600 dark:text-gray-400 transition-colors duration-300 mb-4 md:line-clamp-2">
+                  <p className="text-sm text-gray-600 dark:text-gray-400 transition-colors duration-300 mb-4 md:line-clamp-3">
                     {project.description}
                   </p>
                   <div className="flex flex-row flex-wrap gap-2 mb-5">
@@ -239,7 +239,7 @@ const Projects = () => {
               }}
               viewport={{ once: true }}
               key={index}
-              className="group bg-gray-200 dark:bg-gray-800 rounded-xl border border-gray-300 dark:border-gray-600 backdrop-blur-md hover:shadow-md active:shadow-md transition-colors duration-300 overflow-hidden h-fit md:h-[27rem] flex flex-col"
+              className="group bg-gray-200 dark:bg-gray-800 rounded-xl border border-gray-300 dark:border-gray-600 backdrop-blur-md hover:shadow-md active:shadow-md transition-colors duration-300 overflow-hidden h-fit md:h-[29rem] flex flex-col"
             >
               <div className="h-32 md:h-2/5 bg-gradient-to-br from-gray-900 to-gray-800 flex justify-center items-center">
                 <div className="relative w-full h-full flex justify-center items-center">
@@ -271,7 +271,7 @@ const Projects = () => {
                       Live
                     </span>
                   </div>
-                  <p className="text-sm text-gray-600 dark:text-gray-400 transition-colors duration-300 mb-4 md:line-clamp-2">
+                  <p className="text-sm text-gray-600 dark:text-gray-400 transition-colors duration-300 mb-4 md:line-clamp-3">
                     {project.description}
                   </p>
                   <div className="flex flex-row flex-wrap gap-2 mb-5">
