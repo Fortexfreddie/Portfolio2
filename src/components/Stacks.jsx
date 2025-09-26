@@ -18,6 +18,7 @@ import {
   SiPostman,
   SiNetlify,
   SiDocker,
+  SiNextdotjs,
 } from "react-icons/si";
 import { motion } from "framer-motion";
 import useIsMobile from "../hooks/useIsMobile";
@@ -139,7 +140,7 @@ const techStacks = [
       {
         name: "Express",
         icon: <SiExpress className="text-gray-300" size={36} />,
-        percentage: 30,
+        percentage: 60,
       },
       {
         name: "Laravel",
@@ -147,9 +148,9 @@ const techStacks = [
         percentage: 25,
       },
       {
-        name: "Node.js",
-        icon: <SiNodedotjs className="text-green-500" size={36} />,
-        percentage: 30,
+        name: "Flutter",
+        icon: <SiFlutter className="text-cyan-300" size={36} />,
+        percentage: 65,
       },
       {
         name: "Docker",
@@ -157,9 +158,9 @@ const techStacks = [
         percentage: 65,
       },
       {
-        name: "MongoDB",
-        icon: <SiMongodb className="text-green-500" size={36} />,
-        percentage: 25,
+        name: "Next.js",
+        icon: <SiNextdotjs className="text-black dark:text-white" size={36} />,
+        percentage: 30,
       },
     ],
   },
