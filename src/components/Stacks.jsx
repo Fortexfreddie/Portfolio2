@@ -74,12 +74,12 @@ const techStacks = [
       {
         name: "Node.js",
         icon: <SiNodedotjs className="text-green-500" size={36} />,
-        percentage: 30,
+        percentage: 60,
       },
       {
         name: "Express",
         icon: <SiExpress className="text-gray-300" size={36} />,
-        percentage: 30,
+        percentage: 60,
       },
       {
         name: "MySQL",
@@ -89,7 +89,7 @@ const techStacks = [
       {
         name: "MongoDB",
         icon: <SiMongodb className="text-green-500" size={36} />,
-        percentage: 25,
+        percentage: 65,
       },
     ],
   },
