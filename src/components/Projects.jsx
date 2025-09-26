@@ -1,6 +1,7 @@
 import Conference from "../assets/images/conference.png";
 import Examly from "../assets/images/Examly.png";
 import lazydocs from "../assets/images/lazydocs.png";
+import skydrone from "../assets/images/skydrone.png";
 import lodgeFinder from "../assets/images/lodgeFinder.png";
 import Troopi from "../assets/images/Troopi.png";
 import lifestyle from "../assets/images/lifstyle.png";
@@ -17,7 +18,7 @@ const projects = [
     description:
       "LazyDocs is a VS Code extension that auto-generates project documentation, commit messages, and Baseline reports with LLM support, powered by an Express backend for API requests.",
     image: lazydocs,
-    repo: "https://github.com/Fortexfreddie/LazyDocs",
+    repo: "https://github.com/FrankLayza/lazydocs",
     alt: "LazyDocs",
     tags: ["VS Code Extension", "Node.js", "Express", "LLM", "Automation"],
   },
@@ -29,7 +30,13 @@ const projects = [
     image: honeycrush,
     repo: "https://github.com/Fortexfreddie/HoneyCrush",
     alt: "Honey Crush",
-    tags: ["GameFi", "Honeycomb Protocol", "Blockchain"],
+    tags: [
+      "GameFi",
+      "Honeycomb Protocol",
+      "Blockchain",
+      "Express",
+      "Typescript",
+    ],
   },
   {
     title: "NFT Nexus",
@@ -39,7 +46,16 @@ const projects = [
     image: nexus,
     repo: "https://github.com/FrankLayza/nft-nexus",
     alt: "NFT Nexus",
-    tags: ["NFT", "Typescript", "AI Agent", "JuliaOS", "Express"],
+    tags: [
+      "NFT",
+      "Typescript",
+      "AI Agent",
+      "JuliaOS",
+      "Express",
+      "Docker",
+      "DaisyUI",
+      "LLM",
+    ],
   },
   {
     title: "Lifestyle Blog",
@@ -49,7 +65,15 @@ const projects = [
     image: lifestyle,
     repo: "https://github.com/Fortexfreddie/LIFESTYLEBLOG",
     alt: "Lifestyle Blog",
-    tags: ["Blog", "React", "Tailwind", "PHP", "MySQL"],
+    tags: [
+      "Blog",
+      "React",
+      "Tailwind",
+      "PHP",
+      "MySQL",
+      "DaisyUI",
+      "Framer Motion",
+    ],
   },
   {
     title: "Lodge Finder",
@@ -59,18 +83,18 @@ const projects = [
     image: lodgeFinder,
     repo: "https://github.com/Fortexfreddie/Lodge_Finder_Project",
     alt: "Lodge Finder",
-    tags: ["Lodge", "React", "Tailwind", "PHP", "MySQL"],
+    tags: ["Lodge", "React", "Tailwind", "PHP", "MySQL", "Javascript"],
   },
-  //   {
-  //     title: "Skydrone",
-  //     url: "https://skydrones.netlify.app",
-  //     description:
-  //       "Skydrone's innovative drone technology is bringing the latest farming innovations to farms around the world.",
-  //     image: skydrone,
-  //     repo: "https://github.com/Fortexfreddie/SKYDRONE",
-  //     alt: "skydrone",
-  //     tags: ["Farms", "React", "CSS", "Tailwind"],
-  //   },
+  {
+    title: "Skydrone",
+    url: "https://skydrones.netlify.app",
+    description:
+      "Skydrone's innovative drone technology is bringing the latest farming innovations to farms around the world.",
+    image: skydrone,
+    repo: "https://github.com/Fortexfreddie/SKYDRONE",
+    alt: "skydrone",
+    tags: ["Farms", "Agrotech", "React", "CSS", "Tailwind", "Javascript"],
+  },
   {
     title: "Examly",
     url: "https://examlyy.netlify.app",
@@ -79,7 +103,7 @@ const projects = [
     image: Examly,
     repo: "https://github.com/Fortexfreddie/online-exam-platform",
     alt: "Examly",
-    tags: ["Exams", "React", "AOS", "Express.js", "Tailwind"],
+    tags: ["Exams", "React", "AOS", "Express.js", "Tailwind", "NestJS"],
   },
   {
     title: "Tech Maverick",
@@ -102,7 +126,7 @@ const inDevelopmentProject = [
     image: Troopi,
     repo: "https://github.com/Fortexfreddie/Troopi",
     alt: "Troopi Marketplace",
-    tags: ["Pi Network", "React", "Tailwind", "Framer Motion"],
+    tags: ["Pi Network", "React", "Tailwind", "Framer Motion", "Typescript"],
   },
 ];
 const Projects = () => {
